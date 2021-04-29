@@ -1,0 +1,107 @@
+/*---------------------------------- fonts ----------------------------------*/
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: url('fonts/Gilroy-ExtraBold.otf');
+}
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url('fonts/Gilroy-Light.ttf');
+}
+@font-face {
+  font-family: 'GoogleSans-Bold';
+  src: url('fonts/GoogleSans-Bold.ttf');
+}
+@font-face {
+  font-family: 'GoogleSans-Regular';
+  src: url('fonts/GoogleSans-Regular.ttf');
+}
+.App {
+  border: 0;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Gilroy-Light', sans-serif;
+  font-weight: 800;
+  height: 100vh;
+  font-size: 16px;
+  background: #2251cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.box {
+  width: 150px;
+  height: 150px;
+  background: coral;
+}
+.box:nth-child(even) {
+  width: 100px;
+  height: 100px;
+}
+.graph1 {
+  background: chartreuse;
+  padding: 4px;
+  border-radius: 4px;
+}
+/* .chart {
+  width: 60%;
+  height: 45%;
+} */
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Gilroy-Light', sans-serif;
+  font-weight: 800;
+  color: #fff;
+  background: #121212;
+  border: 0px;
+  border-radius: 4px;
+  pointer-events: none;
+  padding: 12px 16px;
+}
+div.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #121212 transparent transparent transparent;
+}
+.tick text {
+  font-family: 'Gilroy-Light', sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+}
+.bar {
+  fill: #7b68ee;
+}
+.bar-chart-component {
+  box-sizing: border-box;
+  background: #fff;
+  padding: 12px 16px;
+  border-radius: 4px;
+  grid-column: 1/9;
+  grid-row: 1/5;
+  display: grid;
+  grid-template-rows: 10% auto;
+}
+.bar-chart-component h2 {
+  padding: 12px 0;
+  margin: 0;
+  grid-row: 1/2;
+  font-size: 22px;
+  display: grid;
+  grid-template-rows: 10% auto;
+}
+#bar_chart_container {
+  grid-row: 2/3;
+  padding: 10px 0;
+}
+.tick line {
+  stroke: #f0f4fa;
+}
